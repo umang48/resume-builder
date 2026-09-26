@@ -23,6 +23,13 @@ export default function ResumePreview() {
         </div>
       </div>
 
+      {/* Summary Section */}
+      <div>
+        <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
+          {personalInfo.summary || 'Your professional summary will appear here.'}
+        </p>
+      </div>
+
 {experience.length > 0 && (
   <div className="mt-6">
     <h2 className="text-lg font-bold text-gray-800 border-b-2 border-gray-800 mb-3 uppercase tracking-wider">
@@ -93,12 +100,7 @@ export default function ResumePreview() {
   </div>
 )}
       
-      {/* Summary Section */}
-      <div>
-        <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap">
-          {personalInfo.summary || 'Your professional summary will appear here.'}
-        </p>
-      </div>
+      
     </div>
   );
 }
