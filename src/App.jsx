@@ -1,7 +1,7 @@
 import React from 'react';
 import PersonalInfoForm from './components/Form/PersonalInfoForm';
 import ResumePreview from './components/Preview/ResumePreview';
-
+import ExperienceForm from './components/Form/ExperienceForm'; // Add to imports
 function App() {
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-8">
@@ -16,6 +16,7 @@ function App() {
           <div className="h-[85vh] overflow-y-auto pr-2 pb-10">
             <PersonalInfoForm />
             {/* Experience and Education forms will go here next */}
+            <ExperienceForm />
           </div>
 
           {/* Right Column: Live Preview (Sticky) */}
