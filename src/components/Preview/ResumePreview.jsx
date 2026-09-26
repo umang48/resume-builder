@@ -9,7 +9,7 @@ export default function ResumePreview() {
   const education = useResumeStore((state) => state.education);
   const skills = useResumeStore((state) => state.skills);
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg w-full min-h-[842px] border border-gray-200 aspect-[1/1.414]">
+    <div id="resume-preview" className="bg-white p-8 rounded-lg shadow-lg w-full min-h-[842px] border border-gray-200 aspect-[1/1.414]">
       {/* Header Section */}
       <div className="border-b-2 border-gray-800 pb-4 mb-4 text-center">
         <h1 className="text-3xl font-bold uppercase tracking-wider text-gray-800">
