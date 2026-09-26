@@ -56,7 +56,7 @@ export default function ExperienceForm() {
                   value={exp.company}
                   onChange={(e) => handleChange(exp.id, 'company', e.target.value)}
                   className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2 border bg-white" 
-                  placeholder="e.g. Metatagg Solutions" 
+                  placeholder="e.g. TCS" 
                 />
               </div>
               <div>
