@@ -5,24 +5,24 @@ import EducationForm from './components/Form/EducationForm';
 import SkillsForm from './components/Form/SkillsForm';
 import ResumePreview from './components/Preview/ResumePreview';
 import DownloadButton from './components/Export/DownloadButton';
+import TemplateSelector from './components/Form/TemplateSelector';
 
 function App() {
-  // We removed the global store subscription from here!
-  // Now App.jsx only renders once, breaking the infinite loop.
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <header className="mb-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900">Modern Resume Builder</h1>
-          
-          {/* Our isolated download button */}
           <DownloadButton />
         </header>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column: Form Editor */}
           <div className="h-[85vh] overflow-y-auto pr-2 pb-10">
+            {/* Isolated Template Selector */}
+            <TemplateSelector />
+            
             <PersonalInfoForm />
             <ExperienceForm />
             <EducationForm />

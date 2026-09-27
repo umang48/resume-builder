@@ -13,7 +13,9 @@ export const useResumeStore = create((set) => ({
   experience: [], // Array of objects: { id, company, role, startDate, endDate, description }
   education: [],  // Array of objects: { id, school, degree, startDate, endDate }
   skills: '',     // Comma-separated string for simplicity in the UI
+  template: 'minimalist', // 'minimalist' or 'creative'
 
+  setTemplate: (templateName) => set(() => ({ template: templateName })),
   // Actions
   updatePersonalInfo: (data) =>
     set((state) => ({ personalInfo: { ...state.personalInfo, ...data } })),
